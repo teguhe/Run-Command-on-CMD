@@ -69,7 +69,7 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
 
-  Caption:='Test Execute Command via CMD';
+  Caption:='Test Execute Command via CMD - by Teguh Prasetyo';
   Position:=poScreenCenter;
 
 end;
