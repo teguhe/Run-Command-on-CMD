@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 256
+  Height = 475
+  Top = 145
+  Width = 745
+  BorderStyle = bsDialog
+  Caption = 'Form1'
+  ClientHeight = 475
+  ClientWidth = 745
+  OnCreate = FormCreate
+  LCLVersion = '3.6.0.0'
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 440
+    Width = 75
+    Caption = 'Execute'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 338
+    Top = 8
+    Width = 728
+    Lines.Strings = (
+      'copy nul > d:\file1.txt'
+      'copy nul > d:\file2.txt'
+      'copy nul > d:\file3.txt'
+      'pause '
+    )
+    ScrollBars = ssAutoVertical
+    TabOrder = 1
+  end
+  object Memo2: TMemo
+    Left = 8
+    Height = 80
+    Top = 352
+    Width = 728
+    Lines.Strings = (
+      'Memo1'
+    )
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 112
+    Height = 25
+    Top = 440
+    Width = 75
+    Caption = 'Prepare'
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+end
